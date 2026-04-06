@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FaceLog 개인정보처리방침</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7;color:#333;max-width:720px;margin:0 auto;padding:24px 16px}
+h1{font-size:1.5rem;margin-bottom:8px}
+h2{font-size:1.15rem;margin:28px 0 12px;border-bottom:1px solid #e0e0e0;padding-bottom:6px}
+p,li{font-size:0.95rem;margin-bottom:8px}
+ul{padding-left:20px}
+.date{color:#666;font-size:0.85rem;margin-bottom:24px}
+a{color:#007AFF}
+</style>
+</head>
+<body>
+
+<h1>FaceLog 개인정보처리방침</h1>
+<p class="date">시행일: 2026년 4월 7일</p>
+
+<p>FaceLog(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 「개인정보 보호법」에 따라 아래와 같이 개인정보를 처리합니다.</p>
+
+<h2>1. 카메라 및 ARKit (TrueDepth)</h2>
+<p>앱은 매일 얼굴 변화를 기록하기 위해 카메라와 ARKit TrueDepth 센서를 사용합니다.</p>
+<ul>
+<li>수집 항목: 얼굴 사진, 3D 메시(정점 좌표), 블렌드셰이프 계수</li>
+<li><strong>모든 데이터는 사용자 기기에만 저장되며, 외부 서버로 전송되지 않습니다.</strong></li>
+<li>3D 메시 및 블렌드셰이프 데이터는 얼굴 컨디션 분석에만 사용됩니다.</li>
+</ul>
+
+<h2>2. HealthKit (건강 데이터)</h2>
+<p>앱은 얼굴 컨디션과 생활습관의 상관관계를 분석하기 위해 HealthKit 데이터를 읽습니다.</p>
+<ul>
+<li>읽기 항목: 수면 시간/효율, 걸음 수, 안정시 심박수, 심박변이도(HRV)</li>
+<li><strong>읽기 전용이며, HealthKit에 데이터를 기록하지 않습니다.</strong></li>
+<li>읽어온 데이터는 기기 내에서만 저장·분석됩니다.</li>
+</ul>
+
+<h2>3. 위치 정보</h2>
+<ul>
+<li>앱은 현재 위치의 날씨 정보(기온, 습도)를 조회하기 위해 위치 권한을 요청합니다.</li>
+<li><strong>GPS 좌표는 저장하지 않으며</strong>, 기온과 습도 값만 기기에 저장됩니다.</li>
+</ul>
+
+<h2>4. 구독 관리 (RevenueCat)</h2>
+<ul>
+<li>앱은 구독 결제 처리를 위해 RevenueCat SDK를 사용합니다.</li>
+<li>RevenueCat는 Apple ID 기반 영수증 검증만 수행하며, 개인 식별 정보를 별도로 수집하지 않습니다.</li>
+<li>RevenueCat의 개인정보처리방침: <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
+</ul>
+
+<h2>5. 사용자 메모</h2>
+<ul>
+<li>사용자가 선택적으로 입력하는 메모는 기기에만 저장됩니다.</li>
+</ul>
+
+<h2>6. 분석 데이터</h2>
+<ul>
+<li>Face Score, 인사이트 등 모든 분석은 <strong>100% 온디바이스</strong>로 처리됩니다.</li>
+<li>분석 결과는 외부 서버로 전송되지 않습니다.</li>
+</ul>
+
+<h2>7. 수집하지 않는 정보</h2>
+<ul>
+<li>광고 식별자(IDFA)를 수집하지 않습니다.</li>
+<li>제3자 추적 도구를 사용하지 않습니다.</li>
+<li>사용자 데이터를 외부 서버로 전송하지 않습니다.</li>
+</ul>
+
+<h2>8. 데이터 삭제</h2>
+<p>앱을 삭제하면 기기에 저장된 모든 데이터(사진, 분석 결과, 메모, 건강 데이터 사본)가 함께 삭제됩니다. 앱 내 설정에서도 전체 데이터를 삭제할 수 있습니다.</p>
+
+<h2>9. 아동 보호</h2>
+<p>이 앱은 13세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+<h2>10. 향후 변경 가능 사항</h2>
+<p>서비스 개선을 위해 향후 다음 기능을 도입할 수 있습니다:</p>
+<ul>
+<li>Crashlytics (앱 안정성 모니터링)</li>
+<li>Firebase Analytics (사용 통계)</li>
+<li>CloudKit (iCloud 백업/동기화)</li>
+<li>AI 코칭 (서버 기반 분석)</li>
+</ul>
+<p>변경 시 본 처리방침을 사전에 업데이트하고, 앱 내 공지를 통해 안내하겠습니다.</p>
+
+<h2>11. 문의</h2>
+<p>개인정보 처리에 관한 문의는 아래로 연락해 주세요.</p>
+<p>이메일: <a href="mailto:aitedai.dev@gmail.com">aitedai.dev@gmail.com</a></p>
+
+</body>
+</html>

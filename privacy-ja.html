@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FaceLog プライバシーポリシー</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7;color:#333;max-width:720px;margin:0 auto;padding:24px 16px}
+h1{font-size:1.5rem;margin-bottom:8px}
+h2{font-size:1.15rem;margin:28px 0 12px;border-bottom:1px solid #e0e0e0;padding-bottom:6px}
+p,li{font-size:0.95rem;margin-bottom:8px}
+ul{padding-left:20px}
+.date{color:#666;font-size:0.85rem;margin-bottom:24px}
+a{color:#007AFF}
+</style>
+</head>
+<body>
+
+<h1>FaceLog プライバシーポリシー</h1>
+<p class="date">施行日: 2026年4月7日</p>
+
+<p>FaceLog（以下「本アプリ」）は、お客様のプライバシーを大切にしています。本ポリシーでは、データの取り扱いについてご説明します。</p>
+
+<h2>1. カメラおよびARKit（TrueDepth）</h2>
+<p>本アプリは、日々の顔の変化を記録するためにカメラとARKit TrueDepthセンサーを使用します。</p>
+<ul>
+<li>収集項目：顔写真、3Dメッシュ（頂点座標）、ブレンドシェイプ係数</li>
+<li><strong>すべてのデータはお客様のデバイスにのみ保存され、外部サーバーへの送信は一切行いません。</strong></li>
+<li>3Dメッシュおよびブレンドシェイプデータは、顔のコンディション分析のみに使用されます。</li>
+</ul>
+
+<h2>2. HealthKit（ヘルスデータ）</h2>
+<p>本アプリは、顔のコンディションと生活習慣の相関関係を分析するためにHealthKitデータを読み取ります。</p>
+<ul>
+<li>読み取り項目：睡眠時間/効率、歩数、安静時心拍数、心拍変動（HRV）</li>
+<li><strong>読み取り専用であり、HealthKitへのデータ書き込みは行いません。</strong></li>
+<li>HealthKitから読み取ったデータは、デバイス内でのみ保存・分析されます。</li>
+</ul>
+
+<h2>3. 位置情報</h2>
+<ul>
+<li>本アプリは、現在地の天気情報（気温、湿度）を取得するために位置情報へのアクセスを要求します。</li>
+<li><strong>GPS座標は保存しません。</strong>気温と湿度の値のみデバイスに保存されます。</li>
+</ul>
+
+<h2>4. サブスクリプション管理（RevenueCat）</h2>
+<ul>
+<li>本アプリは、サブスクリプション決済処理にRevenueCat SDKを使用しています。</li>
+<li>RevenueCatはApple IDベースのレシート検証のみを行い、個人を特定する情報を別途収集しません。</li>
+<li>RevenueCatプライバシーポリシー：<a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
+</ul>
+
+<h2>5. ユーザーメモ</h2>
+<ul>
+<li>ユーザーが任意で入力するメモは、デバイスにのみ保存されます。</li>
+</ul>
+
+<h2>6. 分析データ</h2>
+<ul>
+<li>Face Scoreやインサイトを含むすべての分析は、<strong>100%オンデバイス</strong>で処理されます。</li>
+<li>分析結果が外部サーバーに送信されることはありません。</li>
+</ul>
+
+<h2>7. 収集しない情報</h2>
+<ul>
+<li>広告識別子（IDFA）を収集しません。</li>
+<li>サードパーティのトラッキングツールを使用しません。</li>
+<li>ユーザーデータを外部サーバーに送信しません。</li>
+</ul>
+
+<h2>8. データの削除</h2>
+<p>本アプリを削除すると、デバイスに保存されたすべてのデータ（写真、分析結果、メモ、ヘルスデータのコピー）が一緒に削除されます。アプリ内の設定からもすべてのデータを削除できます。</p>
+
+<h2>9. お子様のプライバシー</h2>
+<p>本アプリは13歳未満のお子様を対象としておらず、意図的にお子様の個人情報を収集することはありません。</p>
+
+<h2>10. 今後の変更について</h2>
+<p>サービス向上のため、今後以下の機能を導入する可能性があります：</p>
+<ul>
+<li>Crashlytics（アプリ安定性モニタリング）</li>
+<li>Firebase Analytics（利用統計）</li>
+<li>CloudKit（iCloudバックアップ/同期）</li>
+<li>AIコーチング（サーバーベースの分析）</li>
+</ul>
+<p>変更がある場合は事前に本ポリシーを更新し、アプリ内でお知らせします。</p>
+
+<h2>11. お問い合わせ</h2>
+<p>プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
+<p>メール：<a href="mailto:aitedai.dev@gmail.com">aitedai.dev@gmail.com</a></p>
+
+</body>
+</html>
