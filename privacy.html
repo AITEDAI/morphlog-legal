@@ -25,9 +25,9 @@ a{color:#007AFF}
 <h2>1. 카메라 및 ARKit (TrueDepth)</h2>
 <p>앱은 매일 얼굴 변화를 기록하기 위해 카메라와 ARKit TrueDepth 센서를 사용합니다.</p>
 <ul>
-<li>수집 항목: 얼굴 사진, 3D 메시(정점 좌표), 블렌드셰이프 계수</li>
+<li>수집 항목: 얼굴 사진, 3D 메시(정점 좌표), 얼굴 표정 데이터</li>
 <li><strong>모든 데이터는 사용자 기기에만 저장되며, 외부 서버로 전송되지 않습니다.</strong></li>
-<li>3D 메시 및 블렌드셰이프 데이터는 얼굴 컨디션 분석에만 사용됩니다.</li>
+<li>3D 메시 및 표정 데이터는 얼굴 컨디션 분석에만 사용됩니다.</li>
 </ul>
 
 <h2>2. HealthKit (건강 데이터)</h2>
@@ -47,7 +47,7 @@ a{color:#007AFF}
 <h2>4. 구독 관리 (RevenueCat)</h2>
 <ul>
 <li>앱은 구독 결제 처리를 위해 RevenueCat SDK를 사용합니다.</li>
-<li>RevenueCat는 Apple ID 기반 영수증 검증만 수행하며, 개인 식별 정보를 별도로 수집하지 않습니다.</li>
+<li>RevenueCat는 결제 처리 목적으로만 최소한의 데이터를 처리합니다.</li>
 <li>RevenueCat의 개인정보처리방침: <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
 </ul>
 
@@ -65,7 +65,7 @@ a{color:#007AFF}
 <h2>7. 수집하지 않는 정보</h2>
 <ul>
 <li>광고 식별자(IDFA)를 수집하지 않습니다.</li>
-<li>제3자 추적 도구를 사용하지 않습니다.</li>
+<li>제3자 행동 추적 및 광고 도구는 사용하지 않습니다. 앱 안정성 모니터링을 위한 Firebase Crashlytics 사용에 대해서는 §10을 참조하세요.</li>
 <li>사용자 데이터를 외부 서버로 전송하지 않습니다.</li>
 </ul>
 
@@ -75,17 +75,14 @@ a{color:#007AFF}
 <h2>9. 아동 보호</h2>
 <p>이 앱은 13세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
 
-<h2>10. 향후 변경 가능 사항</h2>
-<p>서비스 개선을 위해 향후 다음 기능을 도입할 수 있습니다:</p>
-<ul>
-<li>Crashlytics (앱 안정성 모니터링)</li>
-<li>Firebase Analytics (사용 통계)</li>
-<li>CloudKit (iCloud 백업/동기화)</li>
-<li>AI 코칭 (서버 기반 분석)</li>
-</ul>
+<h2>10. 앱 안정성 모니터링</h2>
+<p>앱 안정성 모니터링을 위해 Firebase Crashlytics를 사용합니다. 크래시 리포트만 수집되며, 개인 식별 정보는 포함되지 않습니다.</p>
+
+<h2>11. 향후 변경 가능 사항</h2>
+<p>서비스 개선을 위해 향후 사용 통계 분석, 클라우드 백업/동기화, AI 기반 코칭 등의 기능을 도입할 수 있습니다.</p>
 <p>변경 시 본 처리방침을 사전에 업데이트하고, 앱 내 공지를 통해 안내하겠습니다.</p>
 
-<h2>11. 문의</h2>
+<h2>12. 문의</h2>
 <p>개인정보 처리에 관한 문의는 아래로 연락해 주세요.</p>
 <p>이메일: <a href="mailto:aitedai.dev@gmail.com">aitedai.dev@gmail.com</a></p>
 
